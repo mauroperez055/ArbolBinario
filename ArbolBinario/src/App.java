@@ -22,7 +22,7 @@ public class App {
         a1 = (Nodo) pila.quitar();
         
         a = ArbolBinario.nuevoArbol(a1, "Esperanza", a2);
-        arbol = new ArbolBinario(a);
+        //arbol = new ArbolBinario(a); no se usa en ningun lado
 
         System.out.println("********************");
         System.out.println("ARBOL BINARIO CREADO");
