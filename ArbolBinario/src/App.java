@@ -11,34 +11,16 @@ public class App {
         a1 = ArbolBinario.nuevoArbol(null, "Maria", null);
         a2 = ArbolBinario.nuevoArbol(null, "Rodrigo", null);
         a = ArbolBinario.nuevoArbol(a1, "Mauro", a2);
-
-        try {
-            pila.insertar(a);
-        } catch (Exception ex) {
-            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        pila.insertar(a);
+        
         a1 = ArbolBinario.nuevoArbol(null, "Gabriel", null);
         a2 = ArbolBinario.nuevoArbol(null, "Abel", null);
         a = ArbolBinario.nuevoArbol(a1, "M Jesus", a2);
-
-        try {
-            pila.insertar(a);
-        } catch (Exception ex) {
-            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        try {
-            a2 = (Nodo) pila.quitar();
-        } catch (Exception ex) {
-            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        try {
-            a1 = (Nodo) pila.quitar();
-        } catch (Exception ex) {
-            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
+        pila.insertar(a);
+       
+        a2 = (Nodo) pila.quitar();
+        a1 = (Nodo) pila.quitar();
+        
         a = ArbolBinario.nuevoArbol(a1, "Esperanza", a2);
         arbol = new ArbolBinario(a);
 
