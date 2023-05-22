@@ -27,8 +27,8 @@ public class ArbolBinario {
     public static void preorden(Nodo r) {
         if (r != null) {
             r.visitar();
-            preorden(r.getDcho());
             preorden(r.getIzdo());
+            preorden(r.getDcho());
         }
     }
 
