@@ -10,7 +10,7 @@ public class App {
 
         a1 = ArbolBinario.nuevoArbol(null, "Maria", null);
         a2 = ArbolBinario.nuevoArbol(null, "Rodrigo", null);
-        a = ArbolBinario.nuevoArbol(a1, "Esperanza", a2);
+        a = ArbolBinario.nuevoArbol(a1, "Mauro", a2);
 
         try {
             pila.insertar(a);
